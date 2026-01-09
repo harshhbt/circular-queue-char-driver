@@ -24,3 +24,7 @@ Make sure you have kernel headers installed.
 
 ```bash
 make
+##
+sudo insmod circular_queue.ko
+dmesg | tail
+
