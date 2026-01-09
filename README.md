@@ -2,7 +2,7 @@
 
 Minimal Linux character device implementing a FIFO circular queue (no locking)
 
-A simple Linux kernel character device that implements a fixed-size circular queue i.e. ring bufferwith no locking.
+A simple Linux kernel character device that implements a fixed-size circular queue with no locking.
 
 This module allows user-space programs to write bytes into a kernel buffer and read them back in FIFO order.
 
