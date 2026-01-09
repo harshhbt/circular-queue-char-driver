@@ -24,7 +24,27 @@ Make sure you have kernel headers installed.
 
 ```bash
 make
-##
+```
+
+Load the Module
+```bash
 sudo insmod circular_queue.ko
 dmesg | tail
+```
+Create a Device Node
+```bash
+sudo mknod /dev/circular_queue c <MAJOR_NUMBER> 0
+sudo chmod 666 /dev/circular_queue
+```
+Usage
+Write to device
+```bash
+echo "hello world" > /dev/circular_queue
+```
+Read from device
+```bash
+cat /dev/circular_queue
+```
+OUTPUT:
+hello world
 
